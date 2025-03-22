@@ -10,12 +10,12 @@ import numpy as np
 app = Flask(__name__)
 
 # Load your saved model
-# model = load_model('skin_new_model.h5',compile=False)
-from keras.utils import custom_object_scope
-from keras.layers import InputLayer
+model = load_model('skin_new_model.h5')
+# from keras.utils import custom_object_scope
+# from keras.layers import InputLayer
 
-with custom_object_scope({'InputLayer': InputLayer}):
-    model = load_model('skin_new_model.h5', compile=False)
+# with custom_object_scope({'InputLayer': InputLayer}):
+#     model = load_model('skin_new_model.h5', compile=False)
 # model = load_model('skin_new_model.h5', custom_objects={'InputLayer': None}, compile=False)
 
 # Define class labels based on your dataset
