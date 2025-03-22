@@ -12,7 +12,6 @@ Flask==3.0.3
 Flask-Cors==5.0.0
 flatbuffers==24.3.25
 fonttools==4.54.1
-gast==0.6.0
 google-pasta==0.2.0
 grpcio==1.67.1
 h5py==3.12.1
